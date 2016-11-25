@@ -1,0 +1,39 @@
+@import 'base';
+@import '~normalize.css/normalize';
+
+@font-face {
+  font-family: 'FontTeckonaut';
+  src: 
+      url('../assets/fonts/alien-resurrection.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: 
+      url('../assets/fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto';
+
+  background: #efefef;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

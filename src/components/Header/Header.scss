@@ -1,0 +1,65 @@
+.Header {
+    background-color: #333;
+    text-align: center;
+    color: white;
+        padding: 25px;
+    .col-md-5 {
+        text-align: center;
+        padding: 25px;
+        img {
+            width: 220px;
+            border-radius: 50%;
+            z-index: 1000;
+        }
+        .hvr-reveal {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        .hvr-reveal:before {
+            border-radius: 50%;
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-color: #a6a6a6;
+            border-style: solid;
+            border-width: 0;
+            -webkit-transition-property: border-width;
+            transition-property: border-width;
+            -webkit-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+        .hvr-reveal:hover:before,
+        .hvr-reveal:focus:before,
+        .hvr-reveal:active:before {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            border-width: 6px;
+        }
+    }
+    .col-md-7 {
+        padding: 25px;
+        h1 {
+            font-size: 55px;
+            font-weight: 700;
+        }
+        .sub-title {
+            color: #d2d2d2;
+            font-size: 35px;
+        }
+    }
+}
+
+.route--active {
+    font-weight: bold;
+    text-decoration: underline;
+}
