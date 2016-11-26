@@ -1,0 +1,40 @@
+.History {
+    text-align: left;
+    .Line {
+        width: 0px;
+        margin: 0px 40px;
+        min-height: 100%;
+        border: 5px solid #8f8f8f;
+    }
+    .TopLine {
+        height: 5px;
+    }
+    .BottomLine {
+        height: 5px;
+    }
+    .Content {
+        border-top:1px solid black;
+        overflow: hidden;
+        position: relative;
+        padding: 10px;
+        padding-left: 60px;
+        .Line {
+            position: relative;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+$history-borders: 80% 50%;
+.History:first-child .TopLine {
+    border-top-left-radius: $history-borders;
+    border-top-right-radius: $history-borders;
+}
+
+.History:last-child .BottomLine {
+    border-bottom-left-radius: $history-borders;
+    border-bottom-right-radius: $history-borders;
+}
