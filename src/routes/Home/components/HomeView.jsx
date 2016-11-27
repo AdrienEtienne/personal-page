@@ -5,10 +5,11 @@ import Angularjs from '../../../assets/images/angularjs.png'
 import Reactjs from '../../../assets/images/reactjs.png'
 import Dotnet from '../../../assets/images/dotnet.png'
 import Bar from '../../../components/Bar'
-import Teckonaut from '../../../components/Teckonaut'
 import ButtonCross from '../../../components/ButtonCross'
 import HoverBand from '../../../components/HoverBand'
 import History from '../../../components/History'
+import Teckonaut from '../../../components/Teckonaut'
+import Footer from '../../../components/Footer'
 import './HomeView.scss'
 
 export class HomeView extends React.Component {
@@ -16,13 +17,13 @@ export class HomeView extends React.Component {
     super(props);
 
     this.state = {
-      toggled: false
+      toggledBars: false
     }
   }
 
   onToggle() {
     this.setState({
-      toggled: !this.state.toggled
+      toggledBars: !this.state.toggledBars
     })
   }
 
@@ -34,14 +35,14 @@ export class HomeView extends React.Component {
             toggle={this
             .onToggle
             .bind(this)}
-            toggled={this.state.toggled}></ButtonCross>
+            toggled={this.state.toggledBars}></ButtonCross>
           <Bar
             image_alt="This is Javascript!"
             image={Javascript}
             text="In conflictual relationship with Javascript"></Bar>
         </div>
         <div
-          className={'js-bars' + (this.state.toggled
+          className={'js-bars' + (this.state.toggledBars
           ? ''
           : ' hide')}>
           <div className="nodejs-bar">
@@ -60,13 +61,24 @@ export class HomeView extends React.Component {
           <Bar image={Dotnet} text="A durable friendship between us"></Bar>
         </div>
         <div className="container">
-          <History text="Mon histoire 1"></History>
-          <History text="Mon histoire 2 avec contenue">
-            <h1>Mon contenue</h1>
+        <History title="2012 - Intern Data Analyst">
+            <h3>Orange France</h3>
+            <p>Development of data mining scripts</p>
+            <p>Build of reports on sales data</p>
+            <p>Reporting and data cleaning automation</p>
+          </History>
+          <History title="2014 - Computer Science degree">
+            <h3>At Paris X University</h3>
+          </History>
+          <History
+            title="2016 - Start freelance career">
+            <h3>Create personal company : <Teckonaut></Teckonaut></h3>
             <p>Mon paragraphe de contenue</p>
           </History>
 
         </div>
+
+        <Footer></Footer>
       </div>
     );
   }

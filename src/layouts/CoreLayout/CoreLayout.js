@@ -4,10 +4,8 @@ import Header from '../../components/Header'
 import './CoreLayout.scss'
 import '../../styles/core.scss'
 
-export const CoreLayout = ({ children }) => (
-  <div>
-    <Header />
-    <div className="menu">
+/*
+<div className="menu">
     <IndexLink to='/' activeClassName='route--active'>
       Home
     </IndexLink>
@@ -16,7 +14,11 @@ export const CoreLayout = ({ children }) => (
       Counter
     </Link>
     </div>
-    
+*/
+
+export const CoreLayout = ({children}) => (
+  <div>
+    <Header/>
     <div className='core-layout__viewport'>
       {children}
     </div>
@@ -24,7 +26,7 @@ export const CoreLayout = ({ children }) => (
 )
 
 CoreLayout.propTypes = {
-  children : React.PropTypes.element.isRequired
+  children: React.PropTypes.element.isRequired
 }
 
 export default CoreLayout
