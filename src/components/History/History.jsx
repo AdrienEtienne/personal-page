@@ -16,18 +16,18 @@ export const History = React.createClass({
     render() {
         return (
             <div className="History">
-                <hr className="line top-line"/>
+                <hr className="line"/>
                 <div className="content">
-                    <hr className="line"/>
                     <div
                         className={(this.props.children
                         ? ''
                         : 'hide')}>
                         <ButtonCross toggled={this.state.toggled} toggle={this.toggle}></ButtonCross>
                     </div>
-                    <div className={'content-title hvr-overline-from-left' + (this.state.toggled?' active':'')}>
+                    <div className="content-title">
                         <div className="arrow-right"></div>
-                         {this.props.title}
+                        <div className={'title hvr-overline-from-left' + (this.state.toggled?' active':'')}>{this.props.title}</div>
+                         
                     </div>
                     <div
                         className={'content-body' + (this.state.toggled
@@ -36,7 +36,6 @@ export const History = React.createClass({
                         {this.props.children}
                     </div>
                 </div>
-                <hr className="line bottom-line"/>
             </div>
 
         )

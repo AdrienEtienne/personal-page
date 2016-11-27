@@ -1,62 +1,54 @@
 .History {
     text-align: left;
+    position: relative;
     .hide {
         display: none;
     }
-    .line {
-        width: 0px;
+    >.line {
         margin: 0px 10px;
         min-height: 100%;
         border: 5px solid #4773c7;
-    }
-    >.line {
-        height: 10px;
+        height: calc(100%+10px);
+        position: absolute;
+        left: 0;
+        top: 0;
     }
     .content {
-        overflow: hidden;
-        position: relative;
-        padding-left: 20px;
-        padding-right: 10px;
+            padding: 15px 0 15px 20px;
         .arrow-right {
             content: "";
-            width: 0;
-            height: 0;
+            float: left;
+            margin-top: 12px;
             border-top: 8px solid transparent;
             border-bottom: 8px solid transparent;
             border-left: 8px solid #4773c7;
-            display: inline-block;
-            margin-right: 5px; 
+            margin-right: 5px;
         }
         .ButtonCross {
             position: absolute;
             z-index: 1;
-            top: 5px;
+            top: 30px;
             right: 0px;
             padding: 10px;
         }
-        .line {
-            position: relative;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
         .content-title {
-            border-top: 1px solid #cecece;
             font-size: 20px;
             font-weight: 600;
-            padding: 10px 30px 10px 0;
+            padding-top: 15px;
+            .title {
+                margin-left: 15px;
+                padding:5px 0px;
+                border-top: 1px solid #cecece;
+            }
         }
         .content-body {
-            padding: 0px 20px;
+            padding-left: 30px;
         }
         .hvr-overline-from-left {
-            display: block;
             -webkit-transform: perspective(1px) translateZ(0);
             transform: perspective(1px) translateZ(0);
             box-shadow: 0 0 1px transparent;
             position: relative;
-            overflow: hidden;
         }
         .hvr-overline-from-left:before {
             content: "";
@@ -80,13 +72,13 @@
     }
 }
 
-$history-borders: 100% 50%;
-.History:first-child .top-line {
+$history-borders: 10px;
+.History:first-child .line {
     border-top-left-radius: $history-borders;
     border-top-right-radius: $history-borders;
 }
 
-.History:last-child .bottom-line {
+.History:last-child .line {
     border-bottom-left-radius: $history-borders;
     border-bottom-right-radius: $history-borders;
 }
