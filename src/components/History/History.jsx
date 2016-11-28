@@ -18,16 +18,13 @@ export const History = React.createClass({
             <div className="History">
                 <hr className="line"/>
                 <div className="content">
-                    <div
-                        className={(this.props.children
-                        ? ''
-                        : 'hide')}>
-                        <ButtonCross toggled={this.state.toggled} toggle={this.toggle}></ButtonCross>
-                    </div>
                     <div className="content-title">
                         <div className="arrow-right"></div>
-                        <div className={'title hvr-overline-from-left' + (this.state.toggled?' active':'')}>{this.props.title}</div>
-                         
+                        <div className={'title hvr-sweep-to-right' + (this.state.toggled?' active':'')}>
+                        <ButtonCross toggled={this.state.toggled} toggle={this.toggle}></ButtonCross>
+                        {this.props.title}
+                        </div>
+
                     </div>
                     <div
                         className={'content-body' + (this.state.toggled
