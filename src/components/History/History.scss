@@ -6,15 +6,18 @@
         display: none;
     }
     >.line {
-        margin: 0px 10px;
+        margin: 0;
+        margin-right: 10px;
         min-height: 100%;
-        border: 5px solid $history-line-color;
+        border: 0px;
         position: absolute;
         left: 0;
         top: 0;
+        width:10px;
+        background: $history-line-color;
     }
     .content {
-        padding-left: 20px;
+        padding-left: 10px;
         .arrow-right {
             content: "";
             float: left;
@@ -22,7 +25,6 @@
             border-top: 8px solid transparent;
             border-bottom: 8px solid transparent;
             border-left: 8px solid $history-line-color;
-            margin-right: 5px;
         }
         .ButtonCross {
             position: absolute;
@@ -41,7 +43,8 @@
             }
         }
         .content-body {
-            padding-left: 30px;
+            padding-left: 15px;
+            display: inline-block;
         }
         .hvr-sweep-to-right {
             -webkit-transform: perspective(1px) translateZ(0);

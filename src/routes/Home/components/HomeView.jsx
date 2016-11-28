@@ -61,20 +61,24 @@ export class HomeView extends React.Component {
           <Bar image={Dotnet} text="A durable friendship between us"></Bar>
         </div>
         <div className="container">
-        <History title="2012 - Intern Data Analyst">
-            <h3>Orange France</h3>
-            <p>Development of data mining scripts</p>
-            <p>Build of reports on sales data</p>
-            <p>Reporting and data cleaning automation</p>
-          </History>
-          <History title="2014 - Computer Science degree">
-            <h3>At Paris X University</h3>
-          </History>
-          <History
-            title="2016 - Start freelance career">
-            <h3>Create personal company : <Teckonaut></Teckonaut></h3>
-            <p>Mon paragraphe de contenue</p>
-          </History>
+          <h1>Developer's Story</h1>
+          <div className="stories">
+            <History title="2012 - Intern Data Analyst">
+              <h3>Orange France</h3>
+              <p>Development of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scripts</p>
+              <p>Build of reports on sales data</p>
+              <p>Reporting and data cleaning automation</p>
+            </History>
+            <History title="2014 - Computer Science degree">
+              <h3>At Paris X University</h3>
+            </History>
+            <History title="2016 - Start freelance career">
+              <h3>Create personal company :
+                <Teckonaut></Teckonaut>
+              </h3>
+              <p>Mon paragraphe de contenue</p>
+            </History>
+          </div>
 
         </div>
 
