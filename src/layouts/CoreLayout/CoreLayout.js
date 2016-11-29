@@ -1,5 +1,4 @@
 import React from 'react'
-import {IndexLink, Link} from 'react-router'
 import Header from '../../components/Header'
 import './CoreLayout.scss'
 import '../../styles/core.scss'
@@ -16,9 +15,9 @@ import '../../styles/core.scss'
     </div>
 */
 
-export const CoreLayout = ({children}) => (
+export const CoreLayout = ({ children }) => (
   <div>
-    <Header/>
+    <Header />
     <div className='core-layout__viewport'>
       {children}
     </div>
