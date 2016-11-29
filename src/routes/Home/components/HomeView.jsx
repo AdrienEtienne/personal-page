@@ -65,18 +65,20 @@ export class HomeView extends React.Component {
           <div className="stories">
             <History title="2012 - Intern Data Analyst">
               <h3>Orange France</h3>
-              <p>Development of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scriptsDevelopment of data mining scripts</p>
+              <p>Development of data mining scripts</p>
               <p>Build of reports on sales data</p>
               <p>Reporting and data cleaning automation</p>
             </History>
             <History title="2014 - Computer Science degree">
-              <h3>At Paris X University</h3>
+              <h3>Master of Computer Science at Paris X university, France</h3>
+              <p>Database engineering</p>
+              <p>Web services</p>
             </History>
             <History title="2016 - Start freelance career">
-              <h3>Create personal company :
+              <h3>
                 <Teckonaut></Teckonaut>
               </h3>
-              <p>Mon paragraphe de contenue</p>
+              <p>IT Consulting</p>
             </History>
           </div>
 
