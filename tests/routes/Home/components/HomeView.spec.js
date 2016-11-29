@@ -9,15 +9,8 @@ describe('(View) Home', () => {
     _component = render(<HomeView />)
   })
 
-  it.skip('Renders a welcome message', () => {
-    const welcome = _component.find('h4')
+  it('Renders a welcome message', () => {
+    const welcome = _component.find('.HomeView')
     expect(welcome).to.exist
-    expect(welcome.text()).to.match(/Welcome!/)
-  })
-
-  it.skip('Renders an awesome duck image', () => {
-    const duck = _component.find('img')
-    expect(duck).to.exist
-    expect(duck.attr('alt')).to.match(/This is a duck, because Redux!/)
   })
 })
