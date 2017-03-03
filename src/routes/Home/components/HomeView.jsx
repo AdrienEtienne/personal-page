@@ -61,7 +61,7 @@ export class HomeView extends React.Component {
           <Bar image={Dotnet} text="A durable friendship between us"></Bar>
         </div>
         <div className="container">
-          <h1>Developer's Story</h1>
+          <h1>Once upon a time...</h1>
           <div className="stories">
             <History title="2012 - Intern Data Analyst">
               <h3>Orange France</h3>
